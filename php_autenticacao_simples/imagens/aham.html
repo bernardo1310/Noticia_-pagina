@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sucesso com Lottie</title>
+  <script src="https://unpkg.com/lottie-web"></script>
+  <style>
+    #animacao {
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+    }
+    button {
+      display: block;
+      margin: auto;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="animacao"></div>
+  <button onclick="reproduzirAnimacao()">Mostrar sucesso</button>
+
+  <script>
+    const animacao = lottie.loadAnimation({
+      container: document.getElementById('animacao'),
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+      path: 'https://assets4.lottiefiles.com/packages/lf20_jbrw3hcz.json'
+    });
+
+    function reproduzirAnimacao() {
+      animacao.goToAndPlay(0, true);
+    }
+  </script>
+
+</body>
+</html>
