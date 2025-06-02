@@ -52,7 +52,7 @@
         </table>
     </main>
         <!-- funcao de confirmacacao em javascript para a exclusao-->
-        <script>
+        <script>''
         function excluirRegistro(url) {
             if (confirm("Confirmar Exclusão?"))
                 location.href = url;
